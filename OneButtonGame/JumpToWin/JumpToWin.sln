@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JumpToWin", "JumpToWin.csproj", "{F49695B1-0880-4161-BE4B-2DC39C6FA78B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameLibrary", "..\MonoGameLibrary\MonoGameLibrary.csproj", "{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collision", "..\Collision\Collision.csproj", "{D5176F3B-A082-47FD-9787-25A575ED873E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrollingBackgound", "..\ScrollingBackgound\ScrollingBackgound.csproj", "{6E5A9753-9803-428C-8FEC-387E960CF8F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spawner", "..\Spawner\Spawner.csproj", "{B46D7C37-C17D-4CB5-9D7D-4FFB6BFB2C90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F49695B1-0880-4161-BE4B-2DC39C6FA78B}.Debug|x86.ActiveCfg = Debug|x86
+		{F49695B1-0880-4161-BE4B-2DC39C6FA78B}.Debug|x86.Build.0 = Debug|x86
+		{F49695B1-0880-4161-BE4B-2DC39C6FA78B}.Release|x86.ActiveCfg = Release|x86
+		{F49695B1-0880-4161-BE4B-2DC39C6FA78B}.Release|x86.Build.0 = Release|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Debug|x86.ActiveCfg = Debug|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Debug|x86.Build.0 = Debug|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Release|x86.ActiveCfg = Release|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Release|x86.Build.0 = Release|x86
+		{D5176F3B-A082-47FD-9787-25A575ED873E}.Debug|x86.ActiveCfg = Debug|x86
+		{D5176F3B-A082-47FD-9787-25A575ED873E}.Debug|x86.Build.0 = Debug|x86
+		{D5176F3B-A082-47FD-9787-25A575ED873E}.Release|x86.ActiveCfg = Release|x86
+		{D5176F3B-A082-47FD-9787-25A575ED873E}.Release|x86.Build.0 = Release|x86
+		{6E5A9753-9803-428C-8FEC-387E960CF8F5}.Debug|x86.ActiveCfg = Debug|x86
+		{6E5A9753-9803-428C-8FEC-387E960CF8F5}.Debug|x86.Build.0 = Debug|x86
+		{6E5A9753-9803-428C-8FEC-387E960CF8F5}.Release|x86.ActiveCfg = Release|x86
+		{6E5A9753-9803-428C-8FEC-387E960CF8F5}.Release|x86.Build.0 = Release|x86
+		{B46D7C37-C17D-4CB5-9D7D-4FFB6BFB2C90}.Debug|x86.ActiveCfg = Debug|x86
+		{B46D7C37-C17D-4CB5-9D7D-4FFB6BFB2C90}.Debug|x86.Build.0 = Debug|x86
+		{B46D7C37-C17D-4CB5-9D7D-4FFB6BFB2C90}.Release|x86.ActiveCfg = Release|x86
+		{B46D7C37-C17D-4CB5-9D7D-4FFB6BFB2C90}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7697B7FD-FADD-475C-9007-9A5698FC80E0}
+	EndGlobalSection
+EndGlobal
