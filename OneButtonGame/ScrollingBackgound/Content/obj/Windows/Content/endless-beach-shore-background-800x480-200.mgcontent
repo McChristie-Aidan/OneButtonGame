@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Aidan/Github/GameProgramming/jeff/Monogame/Samples/3.5/ScrollingBackgound/Content/endless-beach-shore-background-800x480-200.png</SourceFile>
+  <SourceFile>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/ScrollingBackgound/Content/endless-beach-shore-background-800x480-200.png</SourceFile>
   <SourceTime>2019-10-09T12:36:15.5515948-05:00</SourceTime>
-  <DestFile>C:/Users/Aidan/Github/GameProgramming/jeff/Monogame/Samples/3.5/ScrollingBackgound/Content/bin/Windows/Content/endless-beach-shore-background-800x480-200.xnb</DestFile>
-  <DestTime>2019-10-09T12:53:12.7203061-05:00</DestTime>
+  <DestFile>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/ScrollingBackgound/Content/bin/Windows/Content/endless-beach-shore-background-800x480-200.xnb</DestFile>
+  <DestTime>2019-10-09T18:03:33.771268-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2019-07-19T12:50:46-05:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

@@ -4,10 +4,10 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/GhostHit.png</File>
-    <File>C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/RedGhost.png</File>
-    <File>C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/TealGhost.png</File>
-    <File>C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/PurpleGhost.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/GhostHit.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/RedGhost.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/TealGhost.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/PurpleGhost.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

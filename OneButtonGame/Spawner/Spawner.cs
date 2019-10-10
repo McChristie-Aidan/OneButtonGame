@@ -11,7 +11,7 @@ using Microsoft.Xna.Framework.Graphics;
 namespace Spawner
 {
 
-    class Spawner :  GameComponent
+    public class Spawner :  GameComponent
     {
         InputHandler input;
         protected GameComponent instance;
@@ -83,7 +83,7 @@ namespace Spawner
         {
             //System.Threading.Thread.Sleep(1);
             Vector2 loc;
-            loc.X = r.Next(Game.Window.ClientBounds.Width - texture.Width) + texture.Width;
+            loc.X = Game.Window.ClientBounds.Width;//r.Next(Game.Window.ClientBounds.Width - texture.Width) + texture.Width;
             loc.Y = r.Next(Game.Window.ClientBounds.Height - texture.Height) + texture.Height;
             return loc;
         }

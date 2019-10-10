@@ -4,8 +4,8 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Aidan/Github/GameProgramming/jeff/Monogame/Samples/3.5/ScrollingBackgound/Content/endless-beach-shore-background-800x480-200.png</File>
-    <File>C:/Users/Aidan/Github/GameProgramming/jeff/Monogame/Samples/3.5/ScrollingBackgound/Content/ocean-waves-wallpaper-800x480-334.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/ScrollingBackgound/Content/endless-beach-shore-background-800x480-200.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/ScrollingBackgound/Content/ocean-waves-wallpaper-800x480-334.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

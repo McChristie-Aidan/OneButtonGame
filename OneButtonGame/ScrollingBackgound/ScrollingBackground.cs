@@ -11,7 +11,7 @@ namespace ScrollingBackgound
 {
     
 
-    class ScrollingBackground : DrawableGameComponent
+    public class ScrollingBackground : DrawableGameComponent
     {
 
         public string TextureName { get; set; }
@@ -52,7 +52,7 @@ namespace ScrollingBackgound
             this.height = this.GraphicsDevice.Viewport.Height;
 
             LoadBackGround();
-            this.scrollSpeed = -5;
+            this.scrollSpeed = 5;
 
             base.LoadContent();
         }

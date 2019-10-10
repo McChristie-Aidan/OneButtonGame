@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Ghost
 {
-    class GameConsoleGhost : Ghost
+    public class GameConsoleGhost : Ghost
     {
         GameConsole console;
         public GameConsoleGhost()

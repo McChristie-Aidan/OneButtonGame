@@ -17,13 +17,19 @@ namespace JumpToWin
         SpriteBatch spriteBatch;
 
         PacMan pac;
-        
-        
+        Spawner.GhostSpawner spawner;
+        ScrollingBackgound.ScrollingBackground backgound;
 
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            backgound = new ScrollingBackgound.ScrollingBackground(this);
+            this.Components.Add(backgound);
+
+            spawner = new Spawner.GhostSpawner(this);
+            this.Components.Add(spawner);
 
             pac = new PacMan(this);
             this.Components.Add(pac);
@@ -37,7 +43,6 @@ namespace JumpToWin
         /// </summary>
         protected override void Initialize()
         {
-            
 
             base.Initialize();
         }
@@ -73,17 +78,16 @@ namespace JumpToWin
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            //foreach (GameComponent gc in Components)
-            //{
-            //    if (gc is MonogameGhost)
-            //    {
-            //        if (((MonogameGhost)gc).Intersects(pac))
-            //        {
-            //            gc.Enabled = false;
-
-            //        }
-            //    }
-            //}
+            foreach (GameComponent gc in Components)
+            {
+                if (gc is MonogameGhost)
+                {
+                    if (((MonogameGhost)gc).Intersects(pac))
+                    {
+                        gc.Enabled = false;                       
+                    }
+                }
+            }
 
             base.Update(gameTime);
         }

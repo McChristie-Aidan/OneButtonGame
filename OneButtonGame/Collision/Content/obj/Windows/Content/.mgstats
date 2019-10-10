@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Collision/Content/GhostHit.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Collision/Content/bin/Windows/Content/GhostHit.xnb","TextureProcessor","Texture2DContent",1158,11749,0.1370103
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Collision/Content/TealGhost.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Collision/Content/bin/Windows/Content/TealGhost.xnb","TextureProcessor","Texture2DContent",1317,11533,0.0190016

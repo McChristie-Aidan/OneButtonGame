@@ -9,7 +9,7 @@ namespace Ghost
 
     public enum GhostState { Chasing, Evading, Roving, Dead }
 
-    class Ghost
+    public class Ghost
     {
         GhostState _state;
         public GhostState State {

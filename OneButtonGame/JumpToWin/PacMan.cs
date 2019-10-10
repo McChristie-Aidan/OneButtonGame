@@ -20,7 +20,7 @@ namespace JumpToWin
         float GravityAccel;
         float Friction;
         float Accel = 10;
-        int jumpHeight = -300;
+        int jumpHeight = -200;
 
         bool isOnGround;
 
@@ -47,7 +47,7 @@ namespace JumpToWin
             GravityDir = new Vector2(0, 1);
             GravityAccel = 6.0f;
             Friction = 8.0f;
-            SpeedMax = 200;
+            SpeedMax = 100;
             isOnGround = false;
         }
 
@@ -66,13 +66,23 @@ namespace JumpToWin
 
             
             UpdateInputFromKeyboard();
-
+            UpdateKeepPacOnScreen();
 
 
             base.Update(gameTime);
         }
 
-        
+        private void UpdateKeepPacOnScreen()
+        {
+            if (this.Location.Y > Game.GraphicsDevice.Viewport.Height - (this.spriteTexture.Height))
+                this.Location.Y = Game.GraphicsDevice.Viewport.Height - (this.spriteTexture.Height);
+
+            if (this.Location.Y < (0))
+                this.Location.Y = (0);
+
+           // if (this.Location.Y < Game.GraphicsDevice.Viewport.Height - (this.spriteTexture.Height) + 1)
+                //this.Direction.Y = 1;
+        }
 
         private void UpdateInputFromKeyboard()
         {

@@ -1,5 +1,5 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/GhostHit.png","C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/bin/Windows/Content/GhostHit.xnb","TextureProcessor","Texture2DContent",1158,11749,0.2740232
-"C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/PurpleGhost.png","C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/bin/Windows/Content/PurpleGhost.xnb","TextureProcessor","Texture2DContent",1368,11749,0.034003
-"C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/RedGhost.png","C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/bin/Windows/Content/RedGhost.xnb","TextureProcessor","Texture2DContent",1193,11533,0.0170003
-"C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/TealGhost.png","C:/Users/Aidan/Desktop/OneButtonGame/Spawner/Content/bin/Windows/Content/TealGhost.xnb","TextureProcessor","Texture2DContent",1317,11533,0.0230018
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/GhostHit.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/bin/Windows/Content/GhostHit.xnb","TextureProcessor","Texture2DContent",1158,11749,0.1370094
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/PurpleGhost.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/bin/Windows/Content/PurpleGhost.xnb","TextureProcessor","Texture2DContent",1368,11749,0.0140018
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/RedGhost.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/bin/Windows/Content/RedGhost.xnb","TextureProcessor","Texture2DContent",1193,11533,0.0110012
+"C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/TealGhost.png","C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/Spawner/Content/bin/Windows/Content/TealGhost.xnb","TextureProcessor","Texture2DContent",1317,11533,0.018

@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Ghost
 {
-    class MonogameGhost : DrawableSprite
+    public class MonogameGhost : DrawableSprite
     {
         protected GameConsoleGhost ghost;
         public GameConsoleGhost Ghost
@@ -115,22 +115,22 @@ namespace Ghost
             Location += ((this.Direction * (lastUpdateTime / 1000)) * Speed);      //Simple Move
 
             //Borders Keep Ghost on the Screen
-            if ((this.Location.Y + this.spriteTexture.Height / 2 > this.Game.GraphicsDevice.Viewport.Height)
-                ||
-                (this.Location.Y - this.spriteTexture.Height / 2 < 0)
-                )
-            {
-                this.Direction.Y *= -1;
-                this.ghost.State = GhostState.Roving;
-            }
-            if ((this.Location.X + this.spriteTexture.Width / 2 > this.Game.GraphicsDevice.Viewport.Width)
-                ||
-                (this.Location.X - this.spriteTexture.Width / 2 < 0)
-                )
-            {
-                this.Direction.X *= -1;
-                this.ghost.State = GhostState.Roving;
-            }
+            //if ((this.Location.Y + this.spriteTexture.Height / 2 > this.Game.GraphicsDevice.Viewport.Height)
+            //    ||
+            //    (this.Location.Y - this.spriteTexture.Height / 2 < 0)
+            //    )
+            //{
+            //    this.Direction.Y *= -1;
+            //    this.ghost.State = GhostState.Roving;
+            //}
+            //if ((this.Location.X + this.spriteTexture.Width / 2 > this.Game.GraphicsDevice.Viewport.Width)
+            //    ||
+            //    (this.Location.X - this.spriteTexture.Width / 2 < 0)
+            //    )
+            //{
+            //    this.Direction.X *= -1;
+            //    this.ghost.State = GhostState.Roving;
+            //}
 
             
 
@@ -150,7 +150,7 @@ namespace Ghost
         {
             //System.Threading.Thread.Sleep(1);
             Vector2 loc;
-            loc.X = r.Next(Game.Window.ClientBounds.Width - this.spriteTexture.Width) + this.spriteTexture.Width;
+            loc.X = //r.Next(Game.Window.ClientBounds.Width - this.spriteTexture.Width) + this.spriteTexture.Width;
             loc.Y = r.Next(Game.Window.ClientBounds.Height - this.spriteTexture.Height) + this.spriteTexture.Height;
             return loc;
         }

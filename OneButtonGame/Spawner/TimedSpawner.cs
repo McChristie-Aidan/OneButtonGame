@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Spawner
 {
-    class TimedSpawner : Spawner
+    public class TimedSpawner : Spawner
     {
         protected float spawnTime, lastSpawn;
 
@@ -29,7 +29,7 @@ namespace Spawner
         public TimedSpawner(Game game )
             : base(game)
         {
-            spawnTime = 3000;
+            spawnTime = 1000;
             lastSpawn = 0;
         }
 
