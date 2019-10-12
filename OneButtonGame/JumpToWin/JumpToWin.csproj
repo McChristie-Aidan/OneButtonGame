@@ -119,6 +119,10 @@
       <Project>{b46d7c37-c17d-4cb5-9d7d-4ffb6bfb2c90}</Project>
       <Name>Spawner</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Timer\Timer.csproj">
+      <Project>{7ee618ae-c023-4027-b3a4-958c8d907daa}</Project>
+      <Name>Timer</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Content\Assets\Arial.spritefont" />

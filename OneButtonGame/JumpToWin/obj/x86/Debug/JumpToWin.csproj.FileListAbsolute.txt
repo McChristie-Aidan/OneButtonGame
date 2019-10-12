@@ -100,3 +100,7 @@ C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\obj\x86\Debug\JumpTo
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\obj\x86\Debug\JumpToWin.csproj.CopyComplete
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\obj\x86\Debug\JumpToWin.exe
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\obj\x86\Debug\JumpToWin.pdb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Content\spriteFont.xnb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Content\Font.xnb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Timer.exe
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Timer.pdb

@@ -4,9 +4,17 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Aidan/Desktop/OneButtonGame/JumpToWin/Content/pacmanSingle.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/JumpToWin/Content/../../Assets/pacmanSingle.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/JumpToWin/Content/../../Assets/SpriteFont1.spritefont</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/JumpToWin/Content/Font.spritefont</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/JumpToWin/Content/pacmanSingle.png</File>
+    <File>C:/Users/Aidan/Github/OneButtonGame/OneButtonGame/JumpToWin/Content/spriteFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File>pacmanSingle.png</File>
+    <File>SpriteFont1.spritefont</File>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
 </SourceFileCollection>

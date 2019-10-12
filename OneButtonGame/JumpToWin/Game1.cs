@@ -15,10 +15,14 @@ namespace JumpToWin
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        SpriteFont spriteFont;
 
         PacMan pac;
-        Spawner.GhostSpawner spawner;
+        GhostSpawner spawner;
         ScrollingBackgound.ScrollingBackground backgound;
+        Timer.Timer timer;
+        
+        float TimeSurvivedScore;
 
         public Game1()
         {
@@ -33,6 +37,9 @@ namespace JumpToWin
 
             pac = new PacMan(this);
             this.Components.Add(pac);
+
+            timer = new Timer.Timer(this);
+            this.Components.Add(timer);
         }
 
         /// <summary>
@@ -55,7 +62,7 @@ namespace JumpToWin
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            spriteFont = Content.Load<SpriteFont>("spriteFont");
             
         }
 
@@ -84,7 +91,9 @@ namespace JumpToWin
                 {
                     if (((MonogameGhost)gc).Intersects(pac))
                     {
-                        gc.Enabled = false;                       
+                        gc.Enabled = false;
+                        pac.isPacDead = true;
+                        timer.isTimeStopped = true;
                     }
                 }
             }
@@ -100,9 +109,13 @@ namespace JumpToWin
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            
+            spriteBatch.Begin();
+            spriteBatch.DrawString(spriteFont, "hi" ,new Vector2(0,0), Color.Black);
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
+
+        
     }
 }

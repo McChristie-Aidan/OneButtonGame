@@ -23,6 +23,7 @@ namespace JumpToWin
         int jumpHeight = -200;
 
         bool isOnGround;
+        public bool isPacDead;
 
 
         InputHandler input;
@@ -49,6 +50,7 @@ namespace JumpToWin
             Friction = 8.0f;
             SpeedMax = 100;
             isOnGround = false;
+            isPacDead = false;
         }
 
         public override void Update(GameTime gameTime)
@@ -57,17 +59,18 @@ namespace JumpToWin
             //Elapsed time since last update
             float time = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
 
+            if (isPacDead == false)
+            {
+                //Time corrected move. MOves PacMan By PacManDiv every Second
+                this.Location = this.Location + ((this.Direction * (time / 1000)));      //Simple Move PacMan by PacManDir
 
-            //Time corrected move. MOves PacMan By PacManDiv every Second
-            this.Location = this.Location + ((this.Direction * (time / 1000)));      //Simple Move PacMan by PacManDir
+                //Gravity
+                this.Direction = this.Direction + (GravityDir * GravityAccel);
 
-            //Gravity
-            this.Direction = this.Direction + (GravityDir * GravityAccel);
 
-            
-            UpdateInputFromKeyboard();
-            UpdateKeepPacOnScreen();
-
+                UpdateInputFromKeyboard();
+                UpdateKeepPacOnScreen();
+            }
 
             base.Update(gameTime);
         }
@@ -138,6 +141,8 @@ namespace JumpToWin
                 jumpHeight = jumpHeight - 10;
             }
         }
+
+
         
     }
 }
