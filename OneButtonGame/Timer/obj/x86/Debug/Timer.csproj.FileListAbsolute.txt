@@ -22,3 +22,8 @@ C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\obj\x86\Debug\Timer.cspr
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\obj\x86\Debug\Timer.csproj.CopyComplete
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\obj\x86\Debug\Timer.exe
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\obj\x86\Debug\Timer.pdb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\bin\Windows\x86\Debug\Content\Arial.xnb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\bin\Windows\x86\Debug\Content\SpriteMarker.xnb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\bin\Windows\x86\Debug\OpenTK.dll.config
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\bin\Windows\x86\Debug\MonoGameLibrary.dll
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\Timer\bin\Windows\x86\Debug\MonoGameLibrary.pdb

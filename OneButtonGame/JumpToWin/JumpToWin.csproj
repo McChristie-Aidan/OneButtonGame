@@ -111,6 +111,10 @@
       <Project>{aad7c5c6-aa67-45c6-8b7c-22906fa79e9e}</Project>
       <Name>MonoGameLibrary</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ScoreManager\ScoreManager.csproj">
+      <Project>{04100ad5-7599-4807-8cf6-1c97facca8b2}</Project>
+      <Name>ScoreManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ScrollingBackgound\ScrollingBackgound.csproj">
       <Project>{6e5a9753-9803-428c-8fec-387e960cf8f5}</Project>
       <Name>ScrollingBackgound</Name>

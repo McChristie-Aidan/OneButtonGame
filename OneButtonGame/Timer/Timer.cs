@@ -14,9 +14,11 @@ namespace Timer
         SpriteBatch spriteBatch;
         SpriteFont Font;
         
-        float TimeSurvivedScore;
+        public float TimeSurvivedScore;
 
         public bool isTimeStopped;
+
+        public string result;
 
         Vector2 timerLocation; 
     
@@ -46,7 +48,12 @@ namespace Timer
         public override void Draw(GameTime gameTime)
         {
             spriteBatch.Begin();
-            spriteBatch.DrawString(Font, $"Time: {TimeSurvivedScore}", timerLocation, Color.Black);
+            spriteBatch.DrawString(Font, $"Time: {result}", timerLocation, Color.Black);
+            //technical debt this should be in its own class.
+            if (isTimeStopped == true)
+            {
+                spriteBatch.DrawString(Font, $"You survived for {result} seconds!", new Vector2(GraphicsDevice.Viewport.Bounds.Width / 2 - Font.MeasureString($"You survived for {result} seconds!").Length() / 2, GraphicsDevice.Viewport.Bounds.Height / 2), Color.Black);
+            }
             spriteBatch.End();
 
             base.Draw(gameTime);
@@ -55,7 +62,7 @@ namespace Timer
         private void UpdateGetTimeSurvived(GameTime gameTime)
         {
                 TimeSurvivedScore += (float)gameTime.ElapsedGameTime.TotalSeconds;
-                TimeSurvivedScore.ToString();
+                result = TimeSurvivedScore.ToString();
         }
     }
 }

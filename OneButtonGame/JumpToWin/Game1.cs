@@ -15,30 +15,34 @@ namespace JumpToWin
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteFont spriteFont;
+        SpriteFont Font;
 
         PacMan pac;
         GhostSpawner spawner;
         ScrollingBackgound.ScrollingBackground backgound;
         Timer.Timer timer;
-        
-        float TimeSurvivedScore;
+        ScoreManager.ScoreManager scoreManager;
+
+        bool GameOver;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);      
             Content.RootDirectory = "Content";
 
             backgound = new ScrollingBackgound.ScrollingBackground(this);
+            backgound.DrawOrder = 0;
             this.Components.Add(backgound);
 
             spawner = new Spawner.GhostSpawner(this);
             this.Components.Add(spawner);
 
             pac = new PacMan(this);
+            pac.DrawOrder = 1;
             this.Components.Add(pac);
 
             timer = new Timer.Timer(this);
+            timer.DrawOrder = 2;
             this.Components.Add(timer);
         }
 
@@ -62,8 +66,9 @@ namespace JumpToWin
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            spriteFont = Content.Load<SpriteFont>("spriteFont");
-            
+            Font = this.Content.Load<SpriteFont>("Font");
+
+            GameOver = false;
         }
 
         /// <summary>
@@ -91,12 +96,20 @@ namespace JumpToWin
                 {
                     if (((MonogameGhost)gc).Intersects(pac))
                     {
-                        gc.Enabled = false;
-                        pac.isPacDead = true;
-                        timer.isTimeStopped = true;
+                        if (((MonogameGhost)gc).PerPixelCollision(pac))
+                        {
+                            gc.Enabled = false;
+                            pac.Enabled = false;
+                            timer.Enabled = false;
+                            spawner.Enabled = false;
+                            backgound.Enabled = false;
+                            timer.isTimeStopped = true;
+                        }
                     }
                 }
             }
+
+
 
             base.Update(gameTime);
         }
@@ -109,9 +122,7 @@ namespace JumpToWin
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Begin();
-            spriteBatch.DrawString(spriteFont, "hi" ,new Vector2(0,0), Color.Black);
-            spriteBatch.End();
+            
 
             base.Draw(gameTime);
         }

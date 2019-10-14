@@ -104,3 +104,5 @@ C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debu
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Content\Font.xnb
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Timer.exe
 C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\Timer.pdb
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\ScoreManager.exe
+C:\Users\Aidan\Github\OneButtonGame\OneButtonGame\JumpToWin\bin\Windows\x86\Debug\ScoreManager.pdb
